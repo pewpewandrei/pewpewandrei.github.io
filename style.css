@@ -1,0 +1,379 @@
+    /* OVERALL COMMANDS START*/
+@font-face {
+    font-family: 'oxygen_monoregular';
+    src: url('oxygenmono-regular-webfont.woff2') format('woff2'),
+         url('oxygenmono-regular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+html {
+    width: 100%;
+    height: 100%;
+    font-family: 'Roboto Slab', serif;
+    font-size: 14px;
+}
+
+* {
+    box-sizing: border-box;
+ }
+
+ a {
+    text-decoration: none;
+ }
+
+body {
+    height: 100%;
+    width: 100%;
+    margin: 0 auto;
+    padding: 0;
+    align-items: center;
+ }
+
+#sliderbg{
+    margin: 0 auto;
+    width: 100%;
+    height: 100%;
+    animation: one 60s infinite;
+    position: absolute;
+    background-size: 1980px 100%;
+    transition: 0.5s ease;
+    transition-delay: 2s;
+    object-fit: cover;
+}
+
+@keyframes one {
+    0% {background-image: url("slide/1.jpg"); background-size: cover;}
+    35% {background-image: url("slide/2.jpg"); background-size: cover;}
+    70% {background-image: url("slide/3.jpg"); background-size: cover;}
+    100% {background-image: url("slide/4.jpg"); background-size: cover;}
+}
+
+    /* OVERALL COMMANDS ENDS */
+
+    /* TOP BAR STARTS*/
+
+#top-menu {
+    
+    width: 80%;
+    height: 80px;
+    margin: 0 auto;
+    padding: 0;
+    line-height: 80px;
+   /* display: flex;
+    align-items: center; 
+    background-color: rgba(150, 150, 150, 0.9); */
+    
+}
+
+.container-top {
+    line-height: 50px;
+    height: 100%;
+    
+} 
+
+.clogo {
+    display: flex;
+    align-items: center;
+    justify-items: flex-end;
+}
+
+.main-menu-left {
+    display: flex;
+    align-items: center;
+    float: left;
+    position: relative;
+    padding-top: 0;
+}
+
+.main-menu-left li{
+    font-size: 1.3rem;
+    display: inline;
+    padding-right: 25px;
+    border-bottom: 2px;
+        
+}
+
+.main-menu-left a:hover{
+    transition: all 0.5s cubic-bezier(1,.25,0,.75);
+    border-bottom: 2px solid white;
+}
+
+.main-menu-right {
+    float: right;
+    position: relative;
+    
+}
+
+.main-menu-right li{
+    font-size: 1.5rem;
+    display: inline;
+    padding-right: 25px;
+    
+}
+
+.main-menu-right a:hover{
+    border-bottom: 2px solid white;
+}
+
+
+    /*TOP BAR ENDS */
+
+    /*MODELE BOX-In*/
+
+#container-underbar{
+    display: inline-table;
+    vertical-align: middle;
+    width: 80%;
+    height: 100px;
+    overflow: hidden;
+    margin-left: 10%;
+    margin-top: 5vh;
+    border-radius: 10px;
+    border: 5px solid grey;
+}
+
+#ico-logo{
+    display: inline-table;
+    height: 100%;
+    width: 10%;
+    float: left;
+    background-color: whitesmoke;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    padding-left: 0;    
+}
+
+#onedrive {
+    padding: 1vh;
+    padding-left: 0;    
+    width: 15%;
+    float: left;
+    display: table-cell;
+    justify-content: center;
+    vertical-align: middle;
+    background-color: whitesmoke;   
+    border-right: 5px solid grey;
+    height: 45%;
+    margin: 0;
+ /*   line-height: 100%; */
+    min-height: 100%; 
+    height: 7vh;
+    
+}
+
+.online {
+    /* font-family: 'oxygen_monoregular'; */
+    color: black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    font-weight: 900;
+    /* font-style: italic; */
+    font-size: 1.3rem;
+    width: 100%;
+    height: 100%;
+    margin: 0;
+}
+
+.online p{
+    margin: 0;
+    padding: 0;
+}
+
+#desc{
+    margin: 0 ;
+    padding: 1vh;
+    padding-right: 0; 
+    height: 100%;
+    width: 50%;
+    min-width: 300px; 
+    border-right: 5px solid grey;
+    background-color: whitesmoke;
+    color: black;    
+    display: inline-table;
+    
+}
+
+.text-desc {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    font-size: 1.3rem;
+    text-align: center;
+    
+    margin: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.text-desc p{
+    margin: 0;
+    padding: 0 5px;
+}
+
+.dwnbtt{
+    display: inline-table;
+    margin: 0 ;
+    padding: 1vh;
+    float: right;
+    width: 25%;
+    height: 100%;
+    background-color: whitesmoke;
+    color: black;
+    align-content: center;
+    font-size: 2rem;
+    text-align: center;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: bold; 
+    line-height: 100%;
+    margin-left: -5px;
+}
+
+.dwnbtt a{
+    line-height: 100%;
+    margin: 0;
+    padding: 0;
+    border: 0;
+    margin-left: -5px;
+    
+}
+
+.dwnbtt:hover{
+   background-color: navy;
+   color: goldenrod;
+   transition: all 0.3s ease-in;
+}
+    /* MODELE BOX-In ENDS */
+
+    /* UTILE BOX-In STARTS */
+
+#container-underbar-utile-1{
+    transform: skewX(15deg);
+    /* overflow: hidden; */
+    display: flex;
+    padding: 0;
+    margin-left: 15%;
+    margin-top: 30px;
+    width: 80%;
+    height: 70px;
+}
+
+#ico-logo-2{
+    transform: skewX(-15deg);
+    display: flex;
+    height: 100%;
+    width: 20%;
+    float: left;
+    margin-left: 10%;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    padding: 0; 
+}   
+
+#container-underbar-utile-1 a{
+    color: black;
+}
+
+#container-underbar-utile-1 a:hover{
+    background-color: navy;
+    color: goldenrod;
+    transition: all 0.3s ease-in;
+    
+}
+
+#internal-2 {
+    border-radius: 10px;
+    width: 10%;
+    min-width: 145px;
+    min-height: 100%;
+    font-size: 100%;
+    background-color: whitesmoke;
+    display: inline-table;
+    overflow: hidden;
+    margin: 0 5px;
+}
+
+.utile-desc {
+    font-size: 1.1rem;
+    font-weight: bold;
+    height: 100%;
+    width: 60%;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-items: center;
+    padding-left: 5%;
+}
+
+.utile-desc p{
+    display: flex;
+    align-items: center;
+    justify-items: center;
+    height: 100%;
+    width: 7vw;
+    margin: 0 auto;
+    transform: skewX(-15deg);
+    padding-right: 10px;
+}
+
+    /* INSTALARI BOX-IN STARTS */
+
+#container-btt{
+    display: flex;
+    justify-items: center;
+    justify-content: flex-start;
+    align-items: center;
+    width: 75%;
+    height: 100px;
+    margin: 50px 150px;
+}
+
+#container-instalari {
+    display: flex;
+    align-items: center;
+    padding: 0;
+    overflow: hidden;
+    width: 25%;
+    height: 80%;
+    margin: 0 15px;
+    border-radius: 50px;
+    /* background-color: whitesmoke; */
+}
+
+#ico-logo-3 {
+    flex-shrink: 0; 
+    display: flex;
+    align-items: center;
+    height: 80px;
+    width: 80px;
+    padding: 0;
+    background-size: contain;
+    background-repeat: no-repeat;
+    border-radius: 50px;
+    margin: 0 30px;
+    transition: 1s ease;
+}
+
+
+#space-out {
+    display: inline-flex;
+    align-items: center;
+    margin-left: 100px;
+    overflow: hidden;
+    color: black;
+    height: 100%;
+    font-weight: 700;
+    padding-left: 10px;
+    
+}
+
+#ico-logo-3:hover{
+    width: 250px;
+    background-color: whitesmoke;
+    transition: 1s ease;
+}
+
